@@ -15,10 +15,17 @@
         <div class="form-group">
           <input id="username" class="form-control" type="text" placeholder="Enter your name">
         </div>
-      <button class="btn btn-primary">Add a thing</button>
+      <button class="btn btn-primary">Start adding things</button>
       </form>
     </div>
     <div class="add-things col-md-4 col-align">
       <p>Hello, <span class="username text-capitalize"></span></p>
+      <form class="form-inline">
+        <input id="thing" class="form-control" type="text" placeholder="Enter a thing you like">
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+      <br/>
+      <ul id="thing-entry">
+      </ul>
   </body>
 </html>

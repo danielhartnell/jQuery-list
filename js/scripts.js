@@ -1,4 +1,5 @@
 $(function() {
+	$(".no-things").show();
   	$(".add-things").hide();
 });
 
@@ -12,3 +13,13 @@ $(function() {
   	event.preventDefault();
   });
 });
+
+$(function() {
+	$(".add-things form").submit(function(event) {
+	  var thing = $("input#thing").val();
+
+	  $("ul#thing-entry").prepend("<li>" + thing + "</li>");
+	  $("input#thing").val('');
+	  event.preventDefault();
+	})
+})

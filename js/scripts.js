@@ -20,6 +20,9 @@ $(function() {
 
 	  $("ul#thing-entry").prepend("<li>" + thing + "</li>");
 	  $("input#thing").val('');
+	  $("li").click(function() {
+        $(this).remove();
+      });
 	  event.preventDefault();
-	})
-})
+	});
+});

@@ -1,0 +1,5 @@
+- Author name
+- Program name
+- Description
+- Setup instructions with link to project on github.io
+- Copyright and license information

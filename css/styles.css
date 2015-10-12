@@ -1,3 +1,12 @@
 .col-align {
   padding-left: 0px;
 }
+
+.thing-object:hover {
+  text-decoration: none;
+}
+
+.thing-object:hover:after {
+  content: " [click to remove] ";
+  color: red;
+}

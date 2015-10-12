@@ -12,7 +12,7 @@ $(function() {
 
     $(".username").text(username);
     $(".no-things-container").hide();
-    $(".add-things-container").fadeIn();
+    $(".add-things-container").show();
     event.preventDefault();
   });
   

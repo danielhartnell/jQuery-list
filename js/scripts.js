@@ -21,12 +21,8 @@ $(function() {
   $(".todo-items form").submit(function(event) {
     var listItem = $("input#item").val();
 
-    $("ul#add-item").prepend("<li>" + "<a href='#' class='thing-object'>" + listItem + "</a>" + "</li>");
+    $("ul#add-item").prepend("<li><span class='remove-item'>" + listItem + "</span></li>");
     $("input#item").val('');
-
-    $("li").hover(function() {
-      $(this).addClass(".active");
-    });
 
     $("li").click(function() {
       $(this).remove();

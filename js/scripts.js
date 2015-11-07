@@ -15,7 +15,7 @@ $(function() {
     $(".add-things-container").show();
     event.preventDefault();
   });
-  
+
   // Addend new thing to ul
   // Add logic to remove thing on click
   $(".add-things-container form").submit(function(event) {

@@ -1,7 +1,7 @@
-# Program Name
+# jQuery List
 jQuery Code Review
 
-Course: Introduction to Programming
+Course: Introduction to Programming at Epicodus
 
 ### Author
 Daniel Hartnell

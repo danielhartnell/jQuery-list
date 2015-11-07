@@ -2,11 +2,25 @@
   padding-left: 0px;
 }
 
-.thing-object:hover {
-  text-decoration: none;
+.remove-item:hover {
+  cursor: pointer;
+  background-color: #E5FFF2;
 }
 
-.thing-object:hover:after {
-  content: " [click to remove] ";
-  color: red;
+li {
+  font-size: 40px;
+}
+
+.small-lead {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.large-lead {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
 }

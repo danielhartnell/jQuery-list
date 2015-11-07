@@ -1,28 +1,28 @@
 $(function() {
 
   // Set initial div visibility
-  $(".no-things-container").show();
-  $(".add-things-container").hide();
+  $(".welcome").show();
+  $(".todo-items").hide();
   $(".confirm-remove").hide();
 
   // Switch div visibility once user is specified
   // Make sure that preventDefault() is enabled for submit
-  $(".no-things-container form").submit(function(event) {
+  $(".welcome form").submit(function(event) {
     var username = $("input#username").val();
 
     $(".username").text(username);
-    $(".no-things-container").hide();
-    $(".add-things-container").show();
+    $(".welcome").hide();
+    $(".todo-items").show();
     event.preventDefault();
   });
 
-  // Addend new thing to ul
-  // Add logic to remove thing on click
-  $(".add-things-container form").submit(function(event) {
-    var thing = $("input#thing").val();
+  // Addend new item to ul
+  // Add logic to remove item on click
+  $(".todo-items form").submit(function(event) {
+    var listItem = $("input#item").val();
 
-    $("ul#thing-entry").prepend("<li>" + "<a href='#' class='thing-object'>" + thing + "</a>" + "</li>");
-    $("input#thing").val('');
+    $("ul#add-item").prepend("<li>" + "<a href='#' class='thing-object'>" + listItem + "</a>" + "</li>");
+    $("input#item").val('');
 
     $("li").hover(function() {
       $(this).addClass(".active");
